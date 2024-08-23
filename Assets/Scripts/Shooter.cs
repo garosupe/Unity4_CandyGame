@@ -102,7 +102,8 @@ public class Shooter : MonoBehaviour
         //Candyのストックを消費
         candyManager.ConsumeCandy();
 
-        ConsumePower();
+        //ショットできるパワーも消費
+        ConsumePower(); 
 
         shotSound.Play(); //AudioSourceに設置されているAudioClipを再生する
     }
